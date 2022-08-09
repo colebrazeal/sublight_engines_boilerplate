@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEADER -->
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sublight Engines</title>
+  </head>
+
+  <!-- MAIN BODY -->
+  <body id="body">
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url("assets/Roboto/Roboto-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: robotoBold;
+        src: url("assets/Roboto/Roboto-Bold.ttf") format("truetype");
+      }
+
+      #body {
+        font-family: myFirstFont;
+      }
+
+      #bold {
+        font-family: robotoBold;
+      }
+    </style>
+
+    <!-- OUR MISSION -->
+
+    <div id="mission">
+      <div id="header">
+        <div id="image">
+          <img src="images/logo/logo_sublight.svg" />
+        </div>
+        <div id="nav">
+          <a href="#services">OUR SERVICES</a>
+          <a href="#products">OUR PRODUCTS</a>
+          <a href="#about">ABOUT US</a>
+          <a href="#contact">CONTACT US</a>
+        </div>
+      </div>
+      <div class="top">
+        <div id="bold">
+          <h2>OUR MISSION</h2>
+          <h1>TAKE YOU TO THE TOP</h1>
+        </div>
+        <div id="topImg">
+        <a href="#services">
+          <img src="images/elevator button.svg" />
+        </a>
+      </div>
+      </div>
+    </div>
+    <!-- SUCCESS -->
+    <div class="mySuccess" id="services">
+      <div id="bold" class="success">
+        <h3>ONE-STOP FOR YOUR ELEVATOR NEEDS</h3>
+        <h1>ONE STEP CLOSER TO SUCCESS</h1>
+      </div>
+      <div class="divider">
+        <img src="images/separator (2) copy.svg" />
+      </div>
+
+      <div class="we">
+        <div id="weDesign">
+          <img src="images/icon 2/design.svg" />
+          <h3>WE DESIGN</h3>
+        </div>
+
+        <div id="weBuild">
+          <img src="images/icon 3/build.svg" />
+          <h3>WE BUILD</h3>
+        </div>
+
+        <div id="weMaintain">
+          <img src="images/icon/maintenance.svg" />
+          <h3>WE MAINTAIN</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERFECTION -->
+    <div id="about" class="myPerfection">
+      <div class="perfectionText">
+        <div class="perfectionSecurity" id="bold">
+          <h3>2022 SECUREBOARDS SERIES</h3>
+          <h1>THE PERFECTION IN SECURITY</h1>
+        </div>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+          Vulputate diam placerat a et pulvinar sapien orci mauris platea.
+          Consectetur <br />
+          non adipiscing duis quis leo integer adipiscing elit. Felis, cursus
+          <br />
+          aenean at egestas mauris. Senectus pharetra volutpat ligula ac et.
+          <br />
+          Morbi amet dignissim ipsum, in accumsan. Rhoncus in erat <br />
+          consectetur mi consectetur. At faucibus pellentesque et aliquet <br />
+          mauris. Senectus facilisi at elementum lectus non egestas. In <br />
+          elementum cum suspendisse quam. Congue sagittis fermentum mauris
+          fermentum <br />
+          ut lectus parturient faucibus id.
+        </span>
+      </div>
+      <div class="perfectionImg">
+        <img src="images/bkg_2 1.png" />
+      </div>
+    </div>
+
+    <!-- CATALOG -->
+    <div id="products" class="myCatalog">
+      <div id="catalogText">
+        <h4 id="bold">NEED MORE FOR YOUR FLEET OF ELEVATORS</h4>
+        <h1 id="bold">
+          ALL OUR PRODUCTS ARE MADE<br />
+          WITH HEART AND SOUL
+        </h1>
+      </div>
+      <div id="catalogDivider">
+        <img src="images/separator (1).svg" class="separator" alt="separator" />
+      </div>
+      <div id="catalogImg">
+        <img src="images/product_card/product_card (4).svg" />
+        <img src="images/product_card/product_card (3).svg" />
+        <img src="images/product_card/product_card (2).svg" />
+        <img src="images/product_card/product_card (1).svg" />
+        <img src="images/product_card/product_card.svg" />
+      </div>
+      <div id="download">
+        <button class="downloadStyle"  type="download" text="downlaod">DOWNLOAD OUR CATALOG</button>
+      </div>
+    </div>
+
+    <!-- SERVICE REQUEST -->
+    <div class="myForm">
+      <div id="customer">
+        <h5 id="bold">STAY IN TOUCH WITH OUR CUSTOMER SERVICE</h5>
+      </div>
+      <div id="questions">
+        <h1 id="bold">
+          FEEL FREE TO CONTACT US<br />
+          FOR ANY QUESTIONS
+        </h1>
+      </div>
+      <div id="questionsDivider">
+        <img src="images/separator (1).svg" />
+      </div>
+
+      <!--Original form-->
+      <!--
+      <div id="form">
+        <form action="/index.html" method="post">
+          <div class="form_text">
+            <label for="request_fullname">NAME *</label>
+          </div>
+          <div>
+            <input
+            id="request_fullname"
+            type="text"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+            />
+          </div>
+          <div>
+            <div class="form_text">
+              <label for="request_email">EMAIL ADDRESS *</label>
+          </div>
+          <input
+              id="request_email"
+              type="email"
+              name="email"
+              placeholder="yourname@company.com"
+              required
+              />
+            </div>
+
+            <div id="phone_language">
+              <div class="form_text">
+                <label for="request_phone">PHONE NUMBER</label>
+              </div>
+            <div >
+              <input
+              id="phone_number"
+                type="tel"
+                name="telephone"
+                placeholder="0 (000) 000-0000"
+              />
+            </div>
+          </div>
+            <div>
+              <div class="form_text">
+                <label for="request_language">PREFERRED LANGUAGE</label>
+              </div>
+              <select id="request_language" name="language">
+                <option value="">Select</option>
+                <option value="EN">English</option>
+                <option value="FR">French</option>
+                <option value="ES">Espanol</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form_text">
+            <img type="submit" value="Submit" src="images/btn/outline.png" />
+          </div>
+        </form>
+      </div> 
+      -->
+      <!--Original form-->
+
+      <!--New Form-->
+      <div id="contact" class="form-container">
+        <div id="bold" class="form_text">
+          <label for="name">NAME *</label>
+          <input
+            id="request_fullname"
+            type="text"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div id="bold" class="form_text">
+          <label for="name">EMAIL ADDRESS *</label>
+          <input
+            id="request_email"
+            type="email"
+            name="email"
+            placeholder="yourname@company.com"
+            required
+          />
+        </div>
+
+        <div class="input-container">
+          <div id="bold" class="form_text">
+            <label for="name">PHONE NUMBER *</label>
+            <input
+              id="phone_number"
+              type="tel"
+              name="telephone"
+              placeholder="0 (000) 000-0000"
+            />
+          </div>
+          <div id="bold" class="form_text">
+            <label for="name">PREFERRED LANGUAGE *</label>
+            <select id="preferred_language">
+              <option value="">Select</option>
+              <option value="EN">English</option>
+              <option value="FR">French</option>
+              <option value="ES">Espanol</option>
+            </select>
+          </div>
+        </div>
+      <div>
+        <button id="submit" type="submit" text="submit">SUBMIT</button>
+      </div>
+      </div>
+      <!--New Form END-->
+    </div>
+    <!--  myform-->
+
+    <!-- SINCE 1943 -->
+    <div class="cab">
+      <div id="trust">
+        <h1 id="bold">With your trust since 1943.</h1>
+      </div>
+      <div>
+        <img id="cabImg" src="images/logo/signature.svg" />
+      </div>
+    </div>
+  </body>
+
+  <!-- FOOTER -->
+  <footer class="myFooter">
+    <div id="unitedstates">
+      <h4 style="text-align: left; color: #ff7630">UNITED STATES OFFICE</h4>
+      <div style="text-align: left;">
+        456 HARLEM BOULEVARD <br />
+        SARATOGA SPRINGS, NY, USA <br />
+        <b id="bold"> 1 999 543-4567 </b>
+      </div>
+    </div>
+
+    <div id="canada">
+      <h4 style="text-align: right; color: #ff7630">CANADA'S OFFICE</h4>
+      <div style="text-align: right;">
+        23895 BRADSHAW BOULEVARD <br />
+        KINGSTON, ONT, CA <br />
+        <b id="bold"> 1 999 543-4567 </b>
+      </div>
+    </div>
+    <div id="rights">
+      <div>All rights reserved to CodeBoxx Solutions ©, 2022.</div>
+    </div>
+  </footer>
+</html>
