@@ -4,6 +4,7 @@
   <head>
     <link rel="stylesheet" href="css/main.css" />
     <title>Sublight Engines</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
   </head>
 
   <!-- MAIN BODY -->
@@ -26,16 +27,30 @@
       #bold {
         font-family: robotoBold;
       }
+
+      #phone_error {
+        color: red;
+        font-size: 10px;
+        font-family: robotoBold;
+        visibility: hidden;
+      }
     </style>
 
     <!-- OUR MISSION -->
 
     <div id="mission">
-      <div id="header">
-        <div id="image">
+      <div id="navBar">
+        <a href="#" id="image">
           <img src="images/logo/logo_sublight.svg" />
+        </a>
+        <div>
+          <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
         </div>
-        <div id="nav">
+        <div class="nav">
           <a href="#services">OUR SERVICES</a>
           <a href="#products">OUR PRODUCTS</a>
           <a href="#about">ABOUT US</a>
@@ -48,13 +63,15 @@
           <h1>TAKE YOU TO THE TOP</h1>
         </div>
         <div id="topImg">
-        <a href="#services">
-          <img src="images/elevator button.svg" />
-        </a>
-      </div>
+          <a href="#services">
+            <img src="images/elevator button.svg" />
+          </a>
+        </div>
       </div>
     </div>
+
     <!-- SUCCESS -->
+
     <div class="mySuccess" id="services">
       <div id="bold" class="success">
         <h3>ONE-STOP FOR YOUR ELEVATOR NEEDS</h3>
@@ -67,23 +84,32 @@
       <div class="we">
         <div id="weDesign">
           <img src="images/icon 2/design.svg" />
-          <h3>WE DESIGN</h3>
+          <div class="weText">
+            <h3>WE DESIGN</h3>
+          </div>
         </div>
 
         <div id="weBuild">
           <img src="images/icon 3/build.svg" />
-          <h3>WE BUILD</h3>
+          <div class="weText">
+            <h3>WE BUILD</h3>
+          </div>
         </div>
 
         <div id="weMaintain">
           <img src="images/icon/maintenance.svg" />
-          <h3>WE MAINTAIN</h3>
+          <div class="weText">
+            <h3>WE MAINTAIN</h3>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- PERFECTION -->
     <div id="about" class="myPerfection">
+      <div class="perfectionImg">
+        <img src="images/bkg_2 1.png" />
+      </div>
       <div class="perfectionText">
         <div class="perfectionSecurity" id="bold">
           <h3>2022 SECUREBOARDS SERIES</h3>
@@ -104,9 +130,6 @@
           fermentum <br />
           ut lectus parturient faucibus id.
         </span>
-      </div>
-      <div class="perfectionImg">
-        <img src="images/bkg_2 1.png" />
       </div>
     </div>
 
@@ -129,8 +152,10 @@
         <img src="images/product_card/product_card (1).svg" />
         <img src="images/product_card/product_card.svg" />
       </div>
-      <div id="download">
-        <button class="downloadStyle"  type="download" text="downlaod">DOWNLOAD OUR CATALOG</button>
+      <div class="downloadBackground" id="download">
+        <button class="downloadStyle" type="download" text="downlaod">
+          DOWNLOAD OUR CATALOG
+        </button>
       </div>
     </div>
 
@@ -149,116 +174,59 @@
         <img src="images/separator (1).svg" />
       </div>
 
-      <!--Original form-->
-      <!--
-      <div id="form">
-        <form action="/index.html" method="post">
-          <div class="form_text">
-            <label for="request_fullname">NAME *</label>
-          </div>
-          <div>
+      <!--New Form-->
+      <div id="error"></div>
+      <form id="form" name="myForm" novalidate>
+        <div id="contact" class="form-container">
+          <div id="bold" class="form_text">
+            <label id="name" for="name">NAME *</label>
             <input
-            id="request_fullname"
-            type="text"
-            name="fullname"
-            placeholder="Enter your full name"
-            required
+              id="request_fullname"
+              type="text"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
             />
+            <p id="name_error">Please enter a valid Full Name!</p>
           </div>
-          <div>
-            <div class="form_text">
-              <label for="request_email">EMAIL ADDRESS *</label>
-          </div>
-          <input
+          <div id="bold" class="form_text">
+            <label for="email">EMAIL ADDRESS *</label>
+            <input
               id="request_email"
               type="email"
               name="email"
               placeholder="yourname@company.com"
               required
-              />
-            </div>
-
-            <div id="phone_language">
-              <div class="form_text">
-                <label for="request_phone">PHONE NUMBER</label>
-              </div>
-            <div >
+            />
+            <p id="email_error">Please enter a valid Email!</p>
+          </div>
+          <div class="input-container">
+            <div id="bold" class="form_text">
+              <label for="phone_number">PHONE NUMBER *</label>
               <input
-              id="phone_number"
+                id="phone_number"
                 type="tel"
                 name="telephone"
                 placeholder="0 (000) 000-0000"
               />
+              <p id="phone_error">Please enter a valid Phone Number!</p>
             </div>
-          </div>
-            <div>
-              <div class="form_text">
-                <label for="request_language">PREFERRED LANGUAGE</label>
-              </div>
-              <select id="request_language" name="language">
+            <div id="bold" class="form_text">
+              <label for="language">PREFERRED LANGUAGE</label>
+              <select id="preferred_language">
                 <option value="">Select</option>
                 <option value="EN">English</option>
                 <option value="FR">French</option>
-                <option value="ES">Espanol</option>
+                <option value="ES">Español</option>
               </select>
+              <p id="hi">hi</p>
             </div>
           </div>
-          
-          <div class="form_text">
-            <img type="submit" value="Submit" src="images/btn/outline.png" />
-          </div>
-        </form>
-      </div> 
-      -->
-      <!--Original form-->
-
-      <!--New Form-->
-      <div id="contact" class="form-container">
-        <div id="bold" class="form_text">
-          <label for="name">NAME *</label>
-          <input
-            id="request_fullname"
-            type="text"
-            name="fullname"
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
-        <div id="bold" class="form_text">
-          <label for="name">EMAIL ADDRESS *</label>
-          <input
-            id="request_email"
-            type="email"
-            name="email"
-            placeholder="yourname@company.com"
-            required
-          />
-        </div>
-
-        <div class="input-container">
-          <div id="bold" class="form_text">
-            <label for="name">PHONE NUMBER *</label>
-            <input
-              id="phone_number"
-              type="tel"
-              name="telephone"
-              placeholder="0 (000) 000-0000"
-            />
-          </div>
-          <div id="bold" class="form_text">
-            <label for="name">PREFERRED LANGUAGE *</label>
-            <select id="preferred_language">
-              <option value="">Select</option>
-              <option value="EN">English</option>
-              <option value="FR">French</option>
-              <option value="ES">Espanol</option>
-            </select>
+          <div>
+            <button id="submit" type="submit" text="submit">SUBMIT</button>
           </div>
         </div>
-      <div>
-        <button id="submit" type="submit" text="submit">SUBMIT</button>
-      </div>
-      </div>
+      </form>
       <!--New Form END-->
     </div>
     <!--  myform-->
@@ -277,8 +245,8 @@
   <!-- FOOTER -->
   <footer class="myFooter">
     <div id="unitedstates">
-      <h4 style="text-align: left; color: #ff7630">UNITED STATES OFFICE</h4>
-      <div style="text-align: left;">
+      <h4 style="color: #ff7630">UNITED STATES OFFICE</h4>
+      <div>
         456 HARLEM BOULEVARD <br />
         SARATOGA SPRINGS, NY, USA <br />
         <b id="bold"> 1 999 543-4567 </b>
@@ -286,8 +254,8 @@
     </div>
 
     <div id="canada">
-      <h4 style="text-align: right; color: #ff7630">CANADA'S OFFICE</h4>
-      <div style="text-align: right;">
+      <h4 style="color: #ff7630">CANADA'S OFFICE</h4>
+      <div>
         23895 BRADSHAW BOULEVARD <br />
         KINGSTON, ONT, CA <br />
         <b id="bold"> 1 999 543-4567 </b>
@@ -297,4 +265,5 @@
       <div>All rights reserved to CodeBoxx Solutions ©, 2022.</div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </html>
