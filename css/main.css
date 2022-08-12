@@ -18,6 +18,7 @@
 
 #mission {
   background-image: url("../images/bkg_1_1.png");
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -443,7 +444,7 @@
   }
 
   #mission {
-    background-image: url("/images/bkg_1_1.png");
+    background-image: url("../images/bkg_1_1.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 554px;
