@@ -444,7 +444,7 @@
   }
 
   #mission {
-    background-image: url("/images/bkg_1_1.png");
+    background-image: url("../images/bkg_1_1.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 554px;
