@@ -16,3 +16,6 @@ Sublight Engines Project
 * Right Click on site and select 'inspect'
 
 * In the top left of the 'inspect' tab click on the Phone/Tablet icon next to the mouse
+
+* Then at the top of the inspection page change the "Dimensions" to "Responsive" and set the width to 390 and height to 848 
+  (390 x 848)
